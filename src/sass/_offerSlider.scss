@@ -1,0 +1,96 @@
+#offerSlider {
+    overflow: hidden;
+    min-height: 623px;
+    #owl-demo {
+        &:hover{
+            .owl-prev,
+            .owl-next {
+                display: block;
+            }
+        }
+        .owl-stage-outer{
+            padding-top: 30px;
+            padding-bottom: 30px; 
+        }
+        .owl-item {
+            &:hover{
+                .owl-logoimg{
+                    background-color: #1dd2af;
+                    transform: scale(1.1); 
+                }
+                .fa-angle-down{
+                    background-color: #2c3e50;
+                    p{
+                        color: white;
+                    }
+                    &:before{
+                        color:white;
+                    } 
+                }
+            }
+            div {
+                .owl-logoimg {
+                    padding: 3px;
+                    background: #eeeeee;
+                    border-radius: 3px;
+                   div{
+                       width: 100%;
+                       min-height: 50px;
+                       border-radius: 0 0 3px 3px;
+                       padding: 10px;
+                       background-color: #eeeeee;
+                       &:before{
+                           position: absolute;
+                           left: 90%;
+                           top: 84%;
+                           font-size: 20px; 
+                       }
+                       p,span{
+                           line-height: 17.2px;
+                           color: #626262;
+                           font-weight: 400;
+                       }
+                       p{
+                        font-size: 15px;
+                        }
+                        span{
+                            font-size: 13px;
+                            }
+                   }
+                   img{
+                       width:100%;
+                   }
+                }
+            }
+        }
+        .owl-prev,
+        .owl-next {
+            display: none;
+            position: absolute;
+            top:42%;
+            border-radius: 50%;
+            color: #999999;
+            font-size: 10px;
+            transition-duration: 0.2s;
+            &:hover {
+                background-color: #1dd2af;
+                color: white;
+                box-shadow: 1px 1px 10px #999999;
+                top:38%;
+                padding: 11px 15px;
+            }
+        }
+        .owl-next {
+            right: 10px;
+            &:hover {
+                right: 4px
+            }
+        }
+        .owl-prev {
+            left: 8px;
+            &:hover {
+                left: 2px;
+            }
+        }
+    }
+}

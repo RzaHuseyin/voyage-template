@@ -1,0 +1,70 @@
+#client {
+    min-height: 451px;
+    .client_header {
+        padding: 61px 0;
+    }
+    .client_body {
+        #owl-demo {
+            .owl-stage {
+                height: 190px;
+                >.owl-item {
+                    border: 1px solid #dedede;
+                    position: relative;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    height: 128px;
+                    &:hover {
+                        border-top: 3px solid #1dd2af;
+                        &:after {
+                            width: 49px;
+                            height: 26px;
+                            top: 90%;
+                            left: 82%;
+                            transform: rotate(28deg);
+                            border-left: none;
+                            border-right: 1px solid #dedede;
+                        }
+                    }
+                    &:after {
+                        content: "";
+                        width: 49px;
+                        height: 26px;
+                        position: absolute;
+                        top: 90.5%;
+                        left: 82%;
+                        transform: rotate(-28deg);
+                        border-left: 1px solid #dedede;
+                        border-bottom: 1px solid #dedede;
+                        background-color: white;
+                        z-index: 99;
+                    }
+                    .owl-item {
+                        .owl-text {
+                            p,
+                            a,
+                            span {
+                                color: #4d4d4d;
+                            }
+                            p {
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 20.83px;
+                                opacity: 0.5;
+                            }
+                            a {
+                                color: #1dd2af;
+                                line-height: 25px;
+                                font-size: 18px;
+                                display: block;
+                            }
+                            span {
+                                font-size: 13px;
+                                line-height: 20.83px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

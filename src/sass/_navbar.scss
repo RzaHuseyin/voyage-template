@@ -1,0 +1,69 @@
+#navbar {
+    .container {
+        nav {
+            width: 100%;
+            padding: 0;
+            >a {
+                h1 {
+                    font-size: 38px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #2c3e50;
+                    margin-right: auto;
+                    padding: 20px 0;
+                    span {
+                        color: #1dd2af;
+                    }
+                }
+            }
+            ul {
+                margin-right: 3px !important;
+                li {
+                    text-transform: uppercase;
+                    padding: 30px 0;
+                    padding-right: 11px;
+                    font-weight: 700;
+                    &:first-child {
+                        a {
+                            color: #1dd2af;
+                        }
+                    }
+                    a {
+                        color: #5d6e80;
+                    }
+                }
+            }
+            .fa {
+                padding-top: 8px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                border: 3px solid #2c3e50;
+                border-radius: 100%;
+                background: white;
+                cursor: pointer;
+                position: relative;
+                &:before {
+                    font-family: fontAwesome;
+                    position: absolute;
+                    top: 20%;
+                    left: 30%;
+                }
+            }
+            .fa_absolute {
+                position: absolute;
+                top: 0;
+                left: 11em;
+            }
+            .form-inline {
+                position: relative;
+            }
+            .js_input {
+                display: none;
+                input {
+                    padding-right: 33px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+#type {
+    background-color: #2c3e50;
+    background-image: url('../image/type_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 506px;
+    .container {
+        .row {
+            .type_header {
+                padding: 72px 0;
+                h4 {
+                    color: white;
+                }
+                p {
+                    color: #9eafc0;
+                }
+            }
+            .type_icon {
+                width: 154px;
+                height: 154px;
+                position: relative;
+                border: 5px solid white;
+                border-radius: 50%;
+                display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px auto 2.5em ;
+                &:hover {
+                    border-color: #1dd2af;
+                    p,
+                    i {
+                        color: #1dd2af;
+                    }
+                }
+                i {
+                    color: white;
+                    font-size: 4em;
+                }
+                p {
+                    position: absolute;
+                    top: 100%;
+                    color: #9dafc0;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 58px;
+                }
+            }
+        }
+    }
+}

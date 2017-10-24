@@ -1,0 +1,73 @@
+#slider {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: #2c3e50;
+                    opacity: 0.8;
+                    z-index: 2;
+                    content: "";
+                }
+                .carousel-caption {
+                    top: 35%;
+                    h1 {
+                        font-size: 50px;
+                        font-weight: 700;
+                        line-height: 1.5em;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 30px;
+                    }
+                    div {
+                        margin: 24px;
+                        a {
+                            color: white;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 100px;
+                            text-transform: uppercase;
+                            padding: 16px 18px;
+                            border-radius: 4px;
+                            margin: 0 15px; // width: 223px;
+                            // height: 60px;
+                            &:first-child {
+                                border: 2px solid #1dd2af;
+                                background-color: #1dd2af;
+                            }
+                            &:last-child {
+                                background-color: transparent;
+                                border: 2px solid white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >a {
+            &:hover {
+                >.fa {
+                    background: #1dd2af;
+                } 
+            }
+        }
+        .carousel-control-prev {
+            justify-content: flex-start;
+        }
+        .carousel-control-next {
+            justify-content: flex-end;
+        }
+        .fa {
+            padding: 15px 30px;
+            font-size: 50px;
+            background: #506e79;
+        }
+    }
+}

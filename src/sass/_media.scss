@@ -1,0 +1,103 @@
+@media screen and (max-width: 1200px) {
+    #page_login .container .row{
+        .fistrow{
+            li{
+                display: block;
+            }
+        }
+        ul{
+            
+            li {
+                border: none !important;
+                a {
+                    &:before {
+                        margin-left: 5px !important;
+                    }
+                }
+            } 
+        }
+    }
+    #navbar .container nav ul li{
+        padding-right: 0;
+    }
+    #search .container .row .left_search {
+        justify-content: center;
+        border: none;
+        &:after {
+            content: none;
+        }
+        h5 {
+            margin-left: 10px;
+        }
+    }
+    footer .footer_main .pad {
+        padding-right: 1em;
+    } 
+}
+
+@media screen and (max-width: 992px) {
+    #slider .carousel .carousel-inner .carousel-item .carousel-caption {
+        display: none !important;
+    }
+    #search .container .row form .label2 {
+        margin-left: 0;
+    }
+    #navbar .container nav ul li{
+        padding:5px 1em;
+    }
+    #navbar .container nav div .form-inline{
+        padding-left:1em;
+    }
+    #navbar .container nav .fa_absolute{
+        left: 12em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #page_login .container .row .fistrow li{
+        text-align: center;
+        border-bottom: 1px solid #647569 !important;
+    }
+    #search .container .row form button {
+        margin-left: 0;
+    }
+    footer .footer_div .row ul {
+        display: block;
+        li {
+            &:before {
+                content: none;
+            }
+        }
+    }
+    footer .footer_main .pad {
+        padding: 2em;
+        h5{
+            text-align: center;
+        }
+        .row{
+            justify-content: center !important;
+        }
+        .input-group {
+            width: 100%;
+            input{
+                width:100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        #navbar .container nav .fa_absolute {
+            position: absolute;
+            top: 39px;
+            right: 0;
+            left: inherit;
+        }
+        #slider .carousel .fa {
+            padding: 5px;
+            font-size: 35px;
+        }
+    }
+   
+}
